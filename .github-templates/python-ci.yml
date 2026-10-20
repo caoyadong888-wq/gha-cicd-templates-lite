@@ -1,0 +1,56 @@
+# Python lint and test. Copy this file to .github/workflows/ before it will run.
+# Change the working-directory if the project is not in examples/python-app.
+name: Python CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  # setup-python cache writes to the Actions cache with GITHUB_TOKEN.
+  actions: write
+
+concurrency:
+  group: python-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-test:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version:
+          - "3.11"
+          - "3.12"
+    defaults:
+      run:
+        working-directory: examples/python-app
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: "examples/python-app/requirements*.txt"
+
+      - name: Install dependencies
+        run: |
+          export PYTHONDONTWRITEBYTECODE=1
+          python -m pip install -q --upgrade pip
+          python -m pip install -q -r requirements.txt -r requirements-dev.txt
+
+      - name: Lint with ruff
+        run: ruff check --no-cache .
+
+      - name: Test with pytest
+        run: pytest
