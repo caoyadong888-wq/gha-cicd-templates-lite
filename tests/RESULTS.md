@@ -1,6 +1,6 @@
 # Test results
 
-Date: 2026-10-20T04:04:45Z
+Date: 2026-10-20T03:16:17Z
 
 ## Tool versions
 
@@ -62,7 +62,7 @@ found README phrase: Estimated setup time / 预计部署时间
 found README phrase: make demo
 found README phrase: 中文说明
 found README phrase: Full version / 完整版
-found README phrase: https://caoyadong.gumroad.com/l/zbggp
+found README phrase: GUMROAD_URL
 found README phrase: https://caoyadong.gumroad.com/l/yvmcqj
 found README phrase: $9
 exit code: 0
@@ -70,6 +70,8 @@ exit code: 0
 $ screenshots
 screenshots/actionlint.png PNG (1280, 720)
 screenshots/example-tests.png PNG (1280, 1440)
+actionlint.png matches ../screenshots/actionlint.png
+example-tests.png matches ../screenshots/example-tests.png
 exit code: 0
 
 $ secret scan
