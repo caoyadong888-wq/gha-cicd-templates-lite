@@ -64,7 +64,7 @@ This preview is MIT. See `LICENSE`.
 
 ## Full version / 完整版
 
-The full pack is sold separately at GUMROAD_URL.
+The full pack is sold separately at https://caoyadong.gumroad.com/l/zbggp.
 
 A related product, the $9 n8n DevOps Automation Pack, is at https://caoyadong.gumroad.com/l/yvmcqj
 
@@ -153,7 +153,7 @@ Download is instant after payment. Setup on your own machine is about 15 minutes
 
 ### 完整版
 
-完整版单独销售，地址是 GUMROAD_URL。
+完整版单独销售，地址是 https://caoyadong.gumroad.com/l/zbggp。
 
 另一件相关商品是 9 美元的 n8n DevOps Automation Pack：https://caoyadong.gumroad.com/l/yvmcqj
 

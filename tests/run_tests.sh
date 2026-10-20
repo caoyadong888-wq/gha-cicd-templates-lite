@@ -159,7 +159,7 @@ check_phrases() {
     "make demo"
     "中文说明"
     "Full version / 完整版"
-    "GUMROAD_URL"
+    "https://caoyadong.gumroad.com/l/zbggp"
     "https://caoyadong.gumroad.com/l/yvmcqj"
     "\$9"
   )
