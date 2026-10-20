@@ -45,11 +45,18 @@ runs actionlint, yamllint, and the Python demo.
 - `scripts/install-workflows.sh`
 - `tests/run_tests.sh`
 - `screenshots/` rendered from real actionlint and test output
+- `.gitignore` and `.yamllint.yml`
 - `LICENSE` (MIT)
 
 ## Estimated setup time / 预计部署时间
 
 About 15 minutes. Copy the two workflows, run `make demo`, and push the repository. The first GHCR push creates the package under `ghcr.io/<owner>/<repository>`.
+
+## 预计交付时间 / Estimated delivery time
+
+Download is instant after payment. Setup on your own machine is about 15 minutes: copy the two workflows, run `make demo`, and push the repository. A custom setup service, if you order one, takes 1–2 business days.
+
+付款后立即下载。自行部署大约 15 分钟：复制两条工作流，运行 `make demo`，然后推送仓库。如果需要代为部署，定制服务为 1–2 个工作日。
 
 ## License
 
@@ -76,6 +83,7 @@ Only in the full version:
 - `marketing/cover.png`
 - `marketing/thumb.png`
 - `marketing/make_images.py`
+- `GUMROAD_LISTING.md`
 
 The full license is personal and commercial use on your own servers and on client servers, with no resale and no redistribution. This preview stays MIT.
 
@@ -117,7 +125,7 @@ make demo
 
 会运行 actionlint、yamllint，以及上面的 Python 演示。
 
-### 交付物清单
+### 交付物清单 / Deliverables
 
 - `.github-templates/python-ci.yml`
 - `.github-templates/docker-build-push.yml`
@@ -126,11 +134,18 @@ make demo
 - `scripts/install-workflows.sh`
 - `tests/run_tests.sh`
 - `screenshots/`（由真实的 actionlint 和测试输出渲染）
+- `.gitignore` 和 `.yamllint.yml`
 - `LICENSE`（MIT）
 
 ### 预计部署时间
 
 大约 15 分钟。复制两条工作流，运行 `make demo`，然后推送仓库。第一次推送会在 `ghcr.io/<owner>/<repository>` 下创建 package。
+
+### 预计交付时间 / Estimated delivery time
+
+付款后立即下载。自行部署大约 15 分钟：复制两条工作流，运行 `make demo`，然后推送仓库。如果需要代为部署，定制服务为 1–2 个工作日。
+
+Download is instant after payment. Setup on your own machine is about 15 minutes. A custom setup service takes 1–2 business days.
 
 ### 许可证
 
@@ -157,5 +172,6 @@ make demo
 - `marketing/cover.png`
 - `marketing/thumb.png`
 - `marketing/make_images.py`
+- `GUMROAD_LISTING.md`
 
 完整版许可是：可在你自己的服务器和客户服务器上个人使用和商业使用，不得转售，不得再分发。本预览保持 MIT。
